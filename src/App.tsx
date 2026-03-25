@@ -48,15 +48,15 @@ const Navbar = () => {
         News: Online attendance is possible for authors who cannot attend
       </div>
       <nav className={`transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'}`}>
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-3">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+        <div className="flex items-center gap-2 md:gap-3">
           <img 
             src="https://conferences.sigappfr.org/medes2025/wp-content/uploads/2022/09/medes5.png" 
             alt="MEDES Logo" 
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-8 md:h-12 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
-          <span className={`font-bold text-xl tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>MEDES 2025</span>
+          <span className={`font-bold text-base md:text-xl tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>MEDES 2025</span>
         </div>
 
         {/* Desktop Nav */}
@@ -301,12 +301,12 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 md:pt-20 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 px-4 py-2 rounded-full text-sm font-semibold mb-8 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold mb-8 backdrop-blur-sm"
           >
             <Award size={16} />
             <span>The 17th International Conference</span>
