@@ -160,7 +160,7 @@ export default function App() {
       <Navbar />
 
       {/* SECTION 1: HERO - GIỚI THIỆU TỔNG QUAN */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-0">
         {/* Full-width Background with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -188,11 +188,11 @@ export default function App() {
             <p className="text-xl md:text-3xl text-white/90 mb-12 font-medium italic max-w-4xl mx-auto">
               "Tiên phong chuyển đổi số trong giáo dục và công nghệ"
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <a href="#cta" className="bg-fpt-orange hover:bg-fpt-orange/90 text-white px-12 py-5 rounded-sm font-bold text-lg transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6">
+              <a href="#cta" className="bg-fpt-orange hover:bg-fpt-orange/90 text-white px-8 md:px-12 py-4 md:py-5 rounded-sm font-bold text-base md:text-lg transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest text-center">
                 Đăng ký ngay
               </a>
-              <a href="#content" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-12 py-5 rounded-sm font-bold text-lg transition-all backdrop-blur-md uppercase tracking-widest">
+              <a href="#content" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 md:px-12 py-4 md:py-5 rounded-sm font-bold text-base md:text-lg transition-all backdrop-blur-md uppercase tracking-widest text-center">
                 Khám phá sự kiện
               </a>
             </div>
@@ -203,7 +203,7 @@ export default function App() {
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50"
+          className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 text-white/50 hidden sm:block"
         >
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
             <div className="w-1 h-2 bg-fpt-orange rounded-full"></div>
@@ -221,10 +221,10 @@ export default function App() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
             {[
-              { name: "Đơn vị chỉ đạo", logo: "https://picsum.photos/seed/gov/300/150" },
-              { name: "FPT Education", logo: "https://cdn.haitrieu.com/wp-content/uploads/2021/10/Logo-FPT-Education.png" },
+              { name: "Đơn vị chỉ đạo", logo: FPT_LOGO },
+              { name: "FPT Education", logo: FPT_LOGO },
               { name: "FPT University", logo: FPT_LOGO },
-              { name: "Đơn vị phối hợp", logo: "https://picsum.photos/seed/tech/300/150" }
+              { name: "Đơn vị phối hợp", logo: FPT_LOGO }
             ].map((partner, idx) => (
               <motion.div 
                 key={idx}
