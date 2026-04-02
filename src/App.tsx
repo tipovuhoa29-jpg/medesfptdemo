@@ -290,58 +290,58 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionTitle title="Nội dung sự kiện" align="left" />
           
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 auto-rows-[200px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 md:auto-rows-[200px]">
             {/* Hội nghị Quốc tế */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="md:col-span-4 lg:col-span-4 lg:row-span-2 bg-fpt-blue rounded-3xl p-10 text-white relative overflow-hidden group"
+              className="min-h-[320px] md:min-h-0 md:col-span-4 lg:col-span-4 lg:row-span-2 bg-fpt-blue rounded-3xl p-6 md:p-10 text-white relative overflow-hidden group"
             >
               <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
               <div className="relative z-10 h-full flex flex-col justify-end">
-                <Presentation className="mb-6 text-fpt-orange" size={48} />
-                <h3 className="text-3xl font-headline font-extrabold mb-4">Hội nghị Quốc tế</h3>
-                <p className="text-white/80 text-lg max-w-md">Diễn đàn học thuật chuyên sâu với sự tham gia của các học giả quốc tế và chuyên gia đầu ngành.</p>
+                <Presentation className="mb-4 md:mb-6 text-fpt-orange" size={40} />
+                <h3 className="text-2xl md:text-3xl font-headline font-extrabold mb-3 md:mb-4">Hội nghị Quốc tế</h3>
+                <p className="text-white/80 text-base md:text-lg max-w-md">Diễn đàn học thuật chuyên sâu với sự tham gia của các học giả quốc tế và chuyên gia đầu ngành.</p>
               </div>
             </motion.div>
 
             {/* Triển lãm công nghệ */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="md:col-span-2 lg:col-span-2 lg:row-span-2 bg-fpt-green rounded-3xl p-8 text-white relative overflow-hidden group"
+              className="min-h-[280px] md:min-h-0 md:col-span-2 lg:col-span-2 lg:row-span-2 bg-fpt-green rounded-3xl p-6 md:p-8 text-white relative overflow-hidden group"
             >
               <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=600" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer" />
               <div className="relative z-10 h-full flex flex-col justify-end">
-                <Cpu className="mb-4 text-white" size={40} />
-                <h3 className="text-2xl font-bold mb-2">Triển lãm công nghệ</h3>
-                <p className="text-white/80 text-sm">Trình diễn Robotics, AI và các giải pháp giáo dục thông minh.</p>
+                <Cpu className="mb-3 md:mb-4 text-white" size={32} />
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Triển lãm công nghệ</h3>
+                <p className="text-white/80 text-sm md:text-base">Trình diễn Robotics, AI và các giải pháp giáo dục thông minh.</p>
               </div>
             </motion.div>
 
             {/* Startup Pitchfest */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="md:col-span-2 lg:col-span-2 bg-white rounded-3xl p-8 border-2 border-fpt-orange group"
+              className="md:col-span-2 lg:col-span-2 bg-white rounded-3xl p-6 md:p-8 border-2 border-fpt-orange group"
             >
               <Rocket className="text-fpt-orange mb-4" size={32} />
               <h3 className="text-xl font-bold text-fpt-dark mb-2">Startup Pitchfest 2026</h3>
-              <p className="text-slate-500 text-sm">Đấu trường khởi nghiệp dành cho những ý tưởng thay đổi thế giới.</p>
+              <p className="text-slate-500 text-sm md:text-base">Đấu trường khởi nghiệp dành cho những ý tưởng thay đổi thế giới.</p>
             </motion.div>
 
             {/* Thiết kế vi mạch */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="md:col-span-2 lg:col-span-2 bg-fpt-dark rounded-3xl p-8 text-white relative overflow-hidden"
+              className="md:col-span-2 lg:col-span-2 bg-fpt-dark rounded-3xl p-6 md:p-8 text-white relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-fpt-blue/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <Microchip className="text-fpt-blue mb-4" size={32} />
               <h3 className="text-xl font-bold mb-2">Thiết kế vi mạch</h3>
-              <p className="text-white/60 text-sm">Tương lai của ngành bán dẫn tại Việt Nam.</p>
+              <p className="text-white/60 text-sm md:text-base">Tương lai của ngành bán dẫn tại Việt Nam.</p>
             </motion.div>
 
             {/* Ý tưởng đổi mới & Hội thảo */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="md:col-span-2 lg:col-span-2 bg-white rounded-3xl p-8 flex items-center gap-4 shadow-sm"
+              className="md:col-span-2 lg:col-span-2 bg-white rounded-3xl p-6 md:p-8 flex items-center gap-4 shadow-sm"
             >
               <div className="w-12 h-12 bg-fpt-orange/10 text-fpt-orange rounded-full flex items-center justify-center shrink-0">
                 <Lightbulb size={24} />
